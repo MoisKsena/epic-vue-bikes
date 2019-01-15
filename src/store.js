@@ -20,7 +20,7 @@ export default new Vuex.Store({
         .then(function (response) {
           // handle success
          /* console.log(response.request.response);*/
-          commit('GET_DATA', response);
+          commit('GET_DATA', response.data.goods);
         })
         .catch(function (error) {
           // handle error

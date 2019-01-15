@@ -7,12 +7,14 @@
     </svg>
   </button>
 
+    
+
   <div class="card__img">
-    <img src="img/strida-01.jpg" alt="фото" height="150" width="200">
+    <img :src="displayImg" :alt="item.name" height="150" width="200">
   </div>
   <div class="card__inner">
-    <h3 class="card__title">Strida</h3>
-    <span class="card__price">46 000 ₽</span>
+    <h3 class="card__title">{{ item.name }}</h3>
+    <span class="card__price">{{ item.price }}</span>
     <div class="card__btn-block">
       <button class="btn card__btn">Купить</button>
       <a href="item.html" class="btn card__more">Подробнее</a>
@@ -20,3 +22,16 @@
   </div>
 </article>
 </template>
+
+<script>
+  export default {
+    props: {
+      item: Object
+    },
+    computed: {
+      displayImg() {
+        return require ('@/assets/' + this.item.img)
+      }
+    }
+  }
+</script>

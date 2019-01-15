@@ -15,7 +15,13 @@
   
           <div class="page-content__cards">
             <!-- card -->
-            <card />      
+            <card 
+              v-for="item in cards"
+              :key="item.id"
+              :item="item"
+            /> 
+
+
           </div>
         </main>
       </div>
@@ -24,7 +30,7 @@
       {{ print() }}
     </p>
     <p>
-      {{ cards }}
+      <!-- {{ cards }} -->
     </p>
     
       <!-- footer -->
