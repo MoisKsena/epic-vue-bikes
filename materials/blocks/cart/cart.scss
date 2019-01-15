@@ -1,0 +1,35 @@
+.cart {
+  border: 1px solid $red;
+  padding: 0 15px;
+  display: inline-block;
+  position: relative;
+  height: 40px;
+  line-height: 38px;
+  border-radius: 40px;
+
+  &:active {
+    background-color: $red;
+    color: #fff;
+
+    svg {
+      fill: #fff;
+    }
+  }
+
+  svg {
+    margin-right: 3px;
+  }
+
+  &__counter {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: $gray;
+    color: #fff;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.2;
+  }
+}

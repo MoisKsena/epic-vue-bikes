@@ -1,0 +1,19 @@
+.page-content {
+  flex: 1 0 auto;
+  min-height: calc(100vh - 310px);
+
+  &__title {
+    font-size: 50px;
+  }
+
+  &__subtitle {
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,21 @@
+.page-header {
+  border-bottom: 1px solid $red;
+  margin-bottom: 30px;
+
+  &__container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  &__main-nav {
+
+  }
+
+  &__logo {
+    width: 150px;
+    height: 50px;
+    background-color: $gray;
+    border: 1px solid $red;
+    display: inline-block;
+  }
+}

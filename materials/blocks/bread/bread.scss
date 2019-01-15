@@ -1,0 +1,19 @@
+.bread {
+  display: flex;
+
+  &__item {
+    font-size: 16px;
+    margin-right: 10px;
+    display: inline-block;
+
+    a {
+      font-size: 16px;
+      margin-right: 10px;
+      display: inline-block;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

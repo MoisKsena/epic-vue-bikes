@@ -1,0 +1,66 @@
+// Это диспетчер подключений, тут не должно быть ничего, кроме импортов
+
+// bootstrap
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+// @import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+// @import "bootstrap/scss/type";
+// @import "bootstrap/scss/images";
+// @import "bootstrap/scss/code";
+@import "bootstrap/scss/grid";
+// @import "bootstrap/scss/tables";
+// @import "bootstrap/scss/forms";
+@import "bootstrap/scss/buttons";
+// @import "bootstrap/scss/transitions";
+// @import "bootstrap/scss/dropdown";
+// @import "bootstrap/scss/button-group";
+// @import "bootstrap/scss/input-group";
+@import "bootstrap/scss/custom-forms";
+// @import "bootstrap/scss/nav";
+// @import "bootstrap/scss/navbar";
+@import "bootstrap/scss/card";
+// @import "bootstrap/scss/breadcrumb";
+// @import "bootstrap/scss/pagination";
+// @import "bootstrap/scss/badge";
+// @import "bootstrap/scss/jumbotron";
+// @import "bootstrap/scss/alert";
+// @import "bootstrap/scss/progress";
+// @import "bootstrap/scss/media";
+// @import "bootstrap/scss/list-group";
+// @import "bootstrap/scss/close";
+// @import "bootstrap/scss/modal";
+// @import "bootstrap/scss/tooltip";
+// @import "bootstrap/scss/popover";
+// @import "bootstrap/scss/carousel";
+@import "bootstrap/scss/utilities";
+// @import "bootstrap/scss/print";
+
+// Глобальные подключения
+@import 'variables';
+@import 'fonts';
+@import 'global';
+
+// jquery-ui
+// @import "jquery-ui";
+
+// Растровый спрайт: примеси-генераторы правил
+@import 'src/blocks/sprite-png/sprite-png';
+@include sprites($spritesheet-sprites); // Генератор селекторов для всех картинок спрайта
+
+// БЭМ-блоки. Один БЭМ-блок = 1 файл. ВСЕГДА.
+@import 'src/blocks/main-nav/main-nav';
+@import 'src/blocks/page-header/page-header';
+@import 'src/blocks/page-footer/page-footer';
+@import 'src/blocks/page-content/page-content';
+@import 'src/blocks/btn/btn';
+@import 'src/blocks/card/card';
+@import 'src/blocks/sidebar/sidebar';
+@import 'src/blocks/promo/promo';
+@import 'src/blocks/footer-nav/footer-nav';
+@import 'src/blocks/cart/cart';
+@import 'src/blocks/item/item';
+@import 'src/blocks/bread/bread';
+@import 'src/blocks/form/form';
+@import 'src/blocks/cart-item/cart-item';
